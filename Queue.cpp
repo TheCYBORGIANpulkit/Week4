@@ -4,11 +4,11 @@ using namespace std;
 
 class QueueLL{
 public:
-    Queue*Front;
-    Queue*End;
+    Node *Front;
+    Node *End;
     Linkedlist l1;
     QueueLL(){
-        End = l1.head;
+        End = NULL;
     }
     //Pushes on top
     void Enqueue(int val){
