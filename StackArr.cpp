@@ -19,10 +19,13 @@ class StackArr{
 
     }
 
-    void pop(){
+    int pop(){
 
-        //int *temp = &top;
+
+        int d = arr[top];
         top--;
+        return d;
+
         //delete temp;
     }
 
@@ -35,25 +38,21 @@ class StackArr{
     }
     bool isEmpty(){
         if(top == -1){
-            cout<< "The stack is empty. "<<endl;
-            return false;
+
+            return true;
         }
         else{
-            cout<< "NO, the stack is not empty. "<< endl;
-            return true;
+
+            return false;
         }
     }
     int Size(){
-        int i=0;
-        while(arr[i] != NULL){
-            i++;
-        }
-        return i;
+        return top+1;
     }
 
 };
 
-int main(){
+/*int main(){
     //defining the array
     StackArr s1;
     s1.push(1);
@@ -62,12 +61,19 @@ int main(){
     s1.push(5);
     s1.push(8);
     s1.push(13);
+
     s1.push(21);
     s1.Display();
     s1.pop();
+    s1.push(34);
     s1.Display();
     s1.isEmpty();
+    if(s1.isEmpty() == true){
+        cout<< "The stack is empty. "<<endl;
+    }
+    else{ cout<< "NO, the stack is not empty. "<< endl;}
     cout<< "The size of the stack is:" <<s1.Size()<<endl;
 
     return 0;
-}
+}*/
+
