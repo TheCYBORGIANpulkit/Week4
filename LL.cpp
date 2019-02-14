@@ -94,7 +94,7 @@ class Linkedlist{
         Node* temp = tail;
         //moving tail to the second last element
         Node* current = head;
-        while(current->next != tail){
+        while((current->next)->next != NULL){
             current = current->next;
         }
         current->next = NULL;
