@@ -8,6 +8,7 @@ public:
     Node *End;
     Linkedlist l1;
     QueueLL(){
+        Front = NULL
         End = NULL;
     }
     //Pushes on top
